@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		     /*
+				在IE67下，子元素有相对定位的话，父级的overflow包不住子元素
+				解决办法：给父级也加相对定位
+
+		     */
+		     .parent{
+		     	 width:200px;
+		     	 height:200px;
+		     	 border:1px solid #000;
+		     	 background:red;
+		     	 overflow:hidden;
+		     	 /*当子元素有相对定位时，高度超出父元素时，父元素用overflow:hidden却不起作用,解决办法：用position:relative或者absolute,fixed是不起作用的*/
+                 position:relative;
+		     }
+		     .child{
+		     	width:150px;
+		     	height:300px;
+		     	background:yellow;
+		     	position:relative;
+		     }
+	</style>
+</head>
+<body>
+       <div class="parent">
+       	      <div class="child"></div>
+       </div>
+</body>
+</html>

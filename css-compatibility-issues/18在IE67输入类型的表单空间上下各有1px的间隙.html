@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		     /*
+                在IE6,7下输入类型的表单空间上下各有1px的间隙
+                解决办法：给input加浮动
+                在IE6,7下输入类型的表单控件加上border:none;
+                解决办法：重置input的背景
+		     */
+		     .box{
+		     	width:200px;
+		     	height:32px;
+		     	border:1px solid red;
+		     	background:yellow;
+		     }
+		     input{
+		     	 width:100px;
+		     	 height:30px;
+		     	 border:none;
+		     	 margin:0;
+		     	 padding:0;
+		     	 float:left;
+		     	 background:#fff;
+		     }
+	</style>
+</head>
+<body>
+        <div class="box">
+        	   <input type="text" name="">
+        </div>
+</body>
+</html>

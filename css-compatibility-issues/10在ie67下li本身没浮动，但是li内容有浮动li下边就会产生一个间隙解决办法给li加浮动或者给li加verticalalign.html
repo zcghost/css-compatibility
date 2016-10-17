@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		      ul{
+		      	margin:0;
+		      	padding:0;
+		      	width:302px;
+		      }
+		      li{
+		      	list-style:none;
+		      	height:30px;
+		      	border:1px solid #000;
+		      	/*float:left;加浮动可以解决ie6下的间隙问题*/
+		      	vertical-align: top;
+		      }
+		      a{
+		      	width:100px;
+		      	float:left; /*给一个行间元素加上了浮动，内嵌元素就支持宽高了的*/
+		      	height:30px;
+		      	background:blue;
+		      }
+		      span{
+		      	 width:100px;
+		      	 height:30px;
+		      	 float:right;
+		      	 background:blue;
+		      }
+		      /*
+				 在IE67下，li本身没浮动，但是li的内容有浮动，Li下边就会产生一个间隙
+				 解决办法：
+				 1：给li加浮动
+				 2：给li加vertical-align:top;
+
+		      */
+	</style>
+</head>
+<body>
+         <ul>
+         	  <li>
+         	      <a href=""></a>
+         	      <span></span>
+         	  </li>
+         	  <li>
+         	      <a href=""></a>
+         	      <span></span>
+         	  </li>
+         	  <li>
+         	      <a href=""></a>
+         	      <span></span>
+         	  </li>
+         </ul>
+</body>
+</html>

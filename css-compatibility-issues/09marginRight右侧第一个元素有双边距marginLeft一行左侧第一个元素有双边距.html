@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		      .box{
+		      	 border:10px solid #000;
+		      	 float:left;
+		      	 /*
+					 浮动：
+					 1:使元素在一行显示;
+					 2:时内嵌元素支持宽高;
+					 3:不设置宽度的时候宽度由内容撑开;
+					 可以看成是display:inline-block的升级，解决ie67不显示的问题;
+		      	 */
+		      }
+		      .box div{
+		      	   width:100px;
+		      	   height:100px;
+		      	   background:red;
+		      	   margin-left:20px;
+		      	   border:5px solid #ccc;
+		      	   float:left;
+		      	   display:inline;
+		      }
+		      /*
+		            有浮动的情况下，又有margin的情况下会产生双边距
+					margin-right:一行的右侧第一个元素有双编剧
+					margin-left:一行左侧第一个元素有双边距;
+					解决问题：给浮动的元素加上display:inline;
+		      */
+	</style>
+</head>
+<body>
+        <div class="box">
+        	   <div>1</div>
+        	   <div>2</div>
+        	   <div>3</div>
+        	   <div>4</div>
+        </div>
+</body>
+</html>

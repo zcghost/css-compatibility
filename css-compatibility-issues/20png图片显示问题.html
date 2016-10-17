@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		    body{
+		    	background:#000;
+		    }
+		    .box{
+		    	width:400px;
+		    	height:400px;
+		    	background:url("png.png");
+		    }
+		    /*
+                针对IE6png图片透明不显示的问题：
+                引用外部的一个js插件
+                做浏览器检测的判断
+		    */
+	</style>
+	<!--[if IE 6]>
+	<script src="DD_belatedPNG_0.0.8a.js"></script>
+	<script>
+	DD_belatedPNG.fix('.box');
+    </script>
+    <![endif]-->
+</head>
+<body>
+       <div class="box"></div>
+</body>
+</html>

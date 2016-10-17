@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		    .parent{
+                 width:100px;
+                 height:30px;
+                 border:1px solid red;
+                 background:yellow;
+                 background:url("music.png") no-repeat 0 center;
+		    }
+		    input{
+		    	width:100px;
+		    	height:30px;
+		    	border:none;
+		    	margin:0;
+		    	padding:0;
+		    	float:left;
+		    	background:none; /*背景色设置为none*/
+
+		    }
+	</style>
+</head>
+<body>
+        <div class="parent">
+        	   <input type="text" name="" />
+        </div>
+ 
+</body>
+</html>
+ <!-- 
+       在IE6，7下输入类型的表单控件上下各有1px的间隙
+       解决办法：给input加浮动
+       在IE6,7下输入的类型的表单控件加border:none
+       解决办法：重置input的背景
+       在IE67下输入类型的表单空间输入文字的时候，背景图片会跟着一块移动
+       解决办法：把背景加给父级
+
+
+ -->
